@@ -246,3 +246,33 @@ p{
     color: var(--color-brown);
     font-weight: var(--weight-semi-bold)
 }
+
+/*Contact*/
+#contact{
+    max-width: 100%;
+    background-color: var(--color-main);
+    text-align: center;
+    color: var(--color-light-gray);
+}
+
+.contact__title{
+    color: var(--color-yellow);
+    margin: 32px 0;
+}
+
+#contact h1{
+    border: none;
+}
+.contact__email{
+    color: var(--color-light-gray);
+}
+
+#contact i{
+    font-size: 30px;
+}
+
+.contact__links i:hover{
+    transform: scale(1.5);
+    color: var(--color-yellow);
+    transition-duration: 0.5s;
+}
