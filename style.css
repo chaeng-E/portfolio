@@ -49,8 +49,6 @@ li{
     list-style: none;
 }
 
-button
-
 
 
 /**Typography*/
@@ -62,7 +60,7 @@ h1{
 }
 
 h2{
-    font-size: var(--font-regular);
+    font-size: var(--font-medium);
     font-weight: var(--weight-semi-bold);
     color: var(--color-black);
     margin: 8px 0;
@@ -113,7 +111,6 @@ h3{
 #me{
     background-image: url('./imgs/me-background.png.png');
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
     padding: 40px;
     text-align: center;
@@ -130,3 +127,28 @@ h3{
 .me__description{
     color: var(--color-white);
 }
+
+
+
+/*Section common*/
+.section{
+    padding: 50px;
+    text-align: left;
+    max-width: 1200px;
+    margin:auto;
+}
+
+.education__contents{
+    font-size: var(--font-medium);
+}
+
+.education__contents span{
+    font-size: var(--font-regular);
+    float: right;
+}
+
+.section h1{
+    border-bottom: 4px solid var(--color-yellow);
+    padding-bottom: 20px;
+  }
+
