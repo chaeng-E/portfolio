@@ -91,6 +91,7 @@ p{
 button{
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 
 /*Navbar*/
@@ -310,11 +311,14 @@ button{
     background-color: var(--color-main);
     color: var(--color-light-gray);
     border-radius: 50%;
-    display: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease-in;
 }
 
 .arrow-up.visible{
-    display: block;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 

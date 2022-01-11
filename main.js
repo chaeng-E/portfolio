@@ -15,6 +15,34 @@ document .addEventListener ('scroll', () => {
 });
 
 
+ //Navbar
+ const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+ navbarToggleBtn.addEventListener('click' , ( ) =>{
+     navbarMenu.classList.toggle('open');
+ });
+
+ //make...
+const me = document .querySelector('.me__container');
+const meHeight = me.getBoundingClientRect( ).height;
+document.addEventListener('scroll', () => {
+ me.style.opacity = 1 - window.scrollY / meHeight;
+});
+
+//arrow up
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', () => {
+ if(window.scrollY > meHeight /2){
+     arrowUp.classList.add('visible');
+ }else{
+     arrowUp.classList.remove('visible');
+ }
+});
+
+arrowUp.addEventListener('click',( )=>{
+    scrollIntoView('#me');
+});
+
+
 //메뉴를 클릭했을때 해당화면으로 이동
 const navbarMenu=document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click', (event) =>{
@@ -31,16 +59,8 @@ navbarMenu.addEventListener('click', (event) =>{
 
 
 
-    //Navbar
-    const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
-    navbarToggleBtn.addEventListener('click' , ( ) =>{
-        navbarMenu.classList.toggle('open');
-    });
+   
 
-    //make...
-const me = document .querySelector('.me__container');
-const meHeight = me.getBoundingClientRect( ).height;
-document.addEventListener('scroll', () => {
-    me.style.opacity = 1 - window.scrollY / meHeight;
-});
+
+
     
