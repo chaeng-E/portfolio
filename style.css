@@ -120,15 +120,13 @@ button{
     padding: 8px 12px;
     margin: 0 4px;
     cursor: pointer;
+    border: 1px solid transparent;
     border-radius: var(--size-border-radius);
-}
-
-.navbar__menu__item.active{
-    border: 1px solid var(--color-white);
 }
 
 .navbar__menu__item:hover{
     background-color:var(--color-yellow);
+    border-color: var(--color-light-gray);
 }
 
 .navbar__toggle-btn{
@@ -142,7 +140,7 @@ button{
 
 /*Me*/
 #me{
-    background-image: url('./imgs/me-background.png.png');
+    background-image:url("./imgs/me-background.png");
     background-size: 100%;
     background-repeat: no-repeat;
     padding: 40px;
@@ -307,6 +305,11 @@ button{
     #navbar{
         flex-direction: column;
         align-items: flex-start;
+        background-color: var(--color-main);
+    }
+
+    #navbar.navbar--dark{
+        padding: 16px;
     }
 
     .navbar__menu{
@@ -314,6 +317,10 @@ button{
         text-align: center;
         width: 100%;
         display: none;
+    }
+
+    .navbar__menu.open{
+        display: block;
     }
     .navbar__menu .active{
         border: none;
