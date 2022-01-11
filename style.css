@@ -92,12 +92,19 @@ button{
 
 /*Navbar*/
 #navbar{
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-main);
+    background-color: transparent;
     align-items: center;
     color: var(--color-white);
     padding: 16px;
+}
+
+#navbar.navbar--dark{
+    background-color: var(--color-main);
+    padding: 8px;
 }
 
 .navbar__menu{
@@ -136,9 +143,10 @@ button{
 /*Me*/
 #me{
     background-image: url('./imgs/me-background.png.png');
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     padding: 40px;
+    padding-top: 120px;
     text-align: center;
 }
 
