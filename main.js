@@ -28,19 +28,6 @@ document.addEventListener('scroll', () => {
  me.style.opacity = 1 - window.scrollY / meHeight;
 });
 
-//arrow up
-const arrowUp = document.querySelector('.arrow-up');
-document.addEventListener('scroll', () => {
- if(window.scrollY > meHeight /2){
-     arrowUp.classList.add('visible');
- }else{
-     arrowUp.classList.remove('visible');
- }
-});
-
-arrowUp.addEventListener('click',( )=>{
-    scrollIntoView('#me');
-});
 
 
 //메뉴를 클릭했을때 해당화면으로 이동

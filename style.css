@@ -154,9 +154,9 @@ button{
 }
 
 .me__avatar{
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
+    width: 400px;
+    height: 500px;
+    border-radius: 15%;
     border:2px solid var(--color-white);
 }
 
@@ -301,26 +301,6 @@ button{
     color: var(--color-yellow);
     transition-duration: 0.5s;
 }
-
-/*Scroll*/
-.arrow-up{
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-    font-size: 50px;
-    background-color: var(--color-main);
-    color: var(--color-light-gray);
-    border-radius: 50%;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.5s ease-in;
-}
-
-.arrow-up.visible{
-    opacity: 1;
-    pointer-events: auto;
-}
-
 
 /*responsive*/
 @media screen and (max-width:768px){
